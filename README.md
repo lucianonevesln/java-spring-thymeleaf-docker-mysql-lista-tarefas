@@ -18,32 +18,32 @@ Objetivo: criar uma lista de tarefas que permita: inserir, visualizar, alterar s
 
 1 - Modelo:
 
-![alt text]()
+![alt text](https://github.com/lucianonevesln/java-spring-thymeleaf-docker-mysql-lista-tarefas/blob/main/img/img1.png)
 
 2 - Tela Inicial:
 
-![alt text]()
+![alt text](https://github.com/lucianonevesln/java-spring-thymeleaf-docker-mysql-lista-tarefas/blob/main/img/img2.png)
 
 3 - Layout do Usuário:
 
-![alt text]()
+![alt text](https://github.com/lucianonevesln/java-spring-thymeleaf-docker-mysql-lista-tarefas/blob/main/img/img3.png)
 
 4 - Tela para inserir tarefa:
 
-![alt text]()
+![alt text](https://github.com/lucianonevesln/java-spring-thymeleaf-docker-mysql-lista-tarefas/blob/main/img/img4.png)
 
 5 - Tarefa cadastrada:
 
-![alt text]()
+![alt text](https://github.com/lucianonevesln/java-spring-thymeleaf-docker-mysql-lista-tarefas/blob/main/img/img5.png)
 
 6 - Indicação de tarefa concluída:
 
-![alt text]()
+![alt text](https://github.com/lucianonevesln/java-spring-thymeleaf-docker-mysql-lista-tarefas/blob/main/img/img6.png)
 
 7 - Edição de tarefa:
 
-![alt text]()
+![alt text](https://github.com/lucianonevesln/java-spring-thymeleaf-docker-mysql-lista-tarefas/blob/main/img/img7.png)
 
 8 - Exclusão de tarefa:
 
-![alt text]()
+![alt text](https://github.com/lucianonevesln/java-spring-thymeleaf-docker-mysql-lista-tarefas/blob/main/img/img8.png)
