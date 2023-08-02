@@ -1,0 +1,26 @@
+version: '3.1'
+
+
+services:
+
+  meu_mysql:
+    container_name: meu-mysql
+    image: mysql
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: tarefas
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_USER: root
+    ports:
+      - "3306:3306"
+    networks:
+      - rede
+
+
+volumes:
+  mysql:
+
+
+networks:
+  rede:

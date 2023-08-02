@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="p-3 mb-2 bg-info text-white">
+    <div class="container-fluid text-center">
+        <h1>Lista de Tarefas</h1>
+        <a th:href="@{/tarefas/nova-tarefa}" class="btn btn-primary fas fa-plus text-white">+ Tarefa</a>
+        <div th:if="${message}" class="alert alert-success text-center">
+            [[${message}]]
+        </div>
+    </div>
+    <div class="p-2 mb-1">
+        <table class="table table-bordered">
+            <thead class="thead-dark text-center">
+                <th>Id</th>
+                <th>Tarefa</th>
+                <th>Descrição</th>
+                <th>Ativo</th>
+                <th>Gerenciar Tarefas</th>
+            </thead>
+            <tbody th:each="tarefa : ${listaTarefa}">
+                <td>[[${tarefa.id}]]</td>
+                <td>[[${tarefa.tarefa}]]</td>
+                <td>[[${tarefa.descricao}]]</td>
+                <td class="text-center">[[${tarefa.status}]]</td>
+                <td class="text-center">
+                    <a th:href="@{'tarefas/editar-status/'+ ${tarefa.id}}" class="btn btn-success">Concluir</a>
+                    <a th:href="@{'tarefas/editar-tarefa/'+ ${tarefa.id}}" class="btn btn-primary">Editar</a>
+                    <a th:href="@{'tarefas/excluir/' + ${tarefa.id}}" class="btn btn-danger">Deletar</a>
+                </td>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
